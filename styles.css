@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Outfit:wght@700&family=Poppins:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --Dark-blue: hsl(218, 44%, 22%);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 0.6rem;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  background-color: var(--Light-gray);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 340px;
+  margin: auto;
+}
+
+.card {
+  background-color: var(--White);
+  padding: 20px;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  margin: 0px 1em;
+}
+
+.card h2 {
+  padding: 20px 5px;
+  color: var(--Dark-blue);
+  display: flex;
+  text-align: center;
+}
+
+.card p {
+  padding: 0px 8px;
+  color: var(--Grayish-blue);
+  display: flex;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.attribution {
+  margin-top: 1.5rem;
+  font-size: 13px;
+  text-align: center;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: hsl(228, 45%, 44%);
+}
+
+.attribution :hover {
+  text-shadow: 2px 2px 40px var(--Dark-blue);
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+@media (min-width: 500px) {
+  .container {
+    width: 400px;
+  }
+}
